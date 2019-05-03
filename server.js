@@ -1,7 +1,12 @@
 var express = require("express");
+var apiRoutes = require('./app/routing/apiRoutes');
+var htmlRoutes = require('./app/routing/htmlRoutes');
 
 var app = express();
 var PORT = 3000;
+
+app.use('/api', apiRoutes);
+app.use('/static', htmlRoutes);
 
 app.get("/", function (req, res) {
     res.send("Welcome to the Home Page!");
