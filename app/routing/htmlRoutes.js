@@ -9,6 +9,9 @@ router.use(function timeLog(req, res, next) {
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '../public/home.html'))
 })
+router.get('/survey', function (req, res) {
+    res.sendFile(path.join(__dirname, '../public/survey.html'))
+})
 router.use( express.static(path.join(__dirname, '../public')) )
 
 module.exports = router;
