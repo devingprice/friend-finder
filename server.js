@@ -5,6 +5,9 @@ var htmlRoutes = require('./app/routing/htmlRoutes');
 var app = express();
 var PORT = 3000;
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.use('/', htmlRoutes);
 app.use('/api', apiRoutes);
 
