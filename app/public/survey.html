@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="stripe-grid">
+    <!-- <div class="stripe-grid">
         <div class="color">
             <div class="pill"></div>
             <div class="pill"></div>
@@ -22,192 +24,360 @@
             <div class="pill"></div>
             <div class="pill"></div>
         </div>
-    </div>
+
+    </div> -->
+
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="gradient-dark" x1="0%" y1="0%" x2="100%" y2="50%">
+                <stop offset="0%" stop-color="var(--color-stop-1)" />
+                <stop offset="5%" stop-color="var(--color-stop-1)" />
+                <stop offset="100%" stop-color="var(--color-stop-3)" />
+            </linearGradient>
+            <linearGradient id="gradient-light" x1="0%" y1="30%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--color-stop-1)" />
+                <stop offset="50%" stop-color="var(--color-stop-1)" />
+                <stop offset="100%" stop-color="var(--color-stop-3)" />
+            </linearGradient>
+        </defs>
+
+
+        <polygon class="color-dark" points="0,0  0,700 1000,300 1000,0
+               " />
+        <polygon class="color-light" points="0,700  0,1000 1000,1000 1000,300
+               " />
+
+
+        <rect width="150" height="25" class="pill-1" ry="25" rx="25"
+            transform="rotate(-23 100 100) translate(100 250)" />
+        <rect width="500" height="100" class="pill-2" ry="100" rx="100"
+            transform="rotate(-23 100 100) translate(400 300)" />
+        <rect width="500" height="100" class="pill-3" ry="100" rx="100"
+            transform="rotate(-23 100 100) translate(-350 450)" />
+        <rect width="150" height="25" class="pill-4" ry="25" rx="25"
+            transform="rotate(-23 100 100) translate(800 500)" />
+
+        <rect width="150" height="25" class="pill-5" ry="25" rx="25"
+            transform="rotate(-23 100 100) translate(-300 700)" />
+        <rect width="500" height="100" class="pill-6" ry="100" rx="100"
+            transform="rotate(-23 100 100) translate(-400 900)" />
+        <rect width="500" height="100" class="pill-7" ry="100" rx="100"
+            transform="rotate(-23 100 100) translate(400 700)" />
+        <rect width="150" height="25" class="pill-8" ry="25" rx="25"
+            transform="rotate(-23 100 100) translate(400 950)" />
+    </svg>
+
     <main>
         <form id="match-form">
+
+            <div id="q1" class="question">
+                <h3> I am outgoing, sociable </h3>
+
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q1" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q1" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q1" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q1" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q1" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q2" class="question">
+                <h3> I am like to be outdoors </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q2" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q2" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q2" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q2" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q2" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+
+            </div>
+            <div id="q3" class="question">
+                <h3> I enjoy new experiences and trying new things </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q3" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q3" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q3" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q3" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q3" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q4" class="question">
+                <h3> I am often the last decide when ordering at a restaurant. </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q4" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q4" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q4" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q4" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q4" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q5" class="question">
+                <h3> I like to be competitive, in games my main objective is winning </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q5" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q5" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q5" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q5" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q5" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q6" class="question">
+                <h3> I plan things out before taking action </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q6" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q6" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q6" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q6" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q6" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q7" class="question">
+                <h3> "Finder's keepers" is a fair rule</h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q7" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q7" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q7" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q7" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q7" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q8" class="question">
+                <h3> I enjoy the bar scene </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q8" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q8" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q8" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q8" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q8" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q9" class="question">
+                <h3> I consider myself fashion conscious </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q9" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q9" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q9" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q9" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q9" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+            <div id="q10" class="question ">
+                <h3> To progress in life, one must follow the rules </h3>
+                <div>
+                    <div class="scale">Strongly Disagree</div>
+
+                    <input type="radio" name="q10" value="1">
+                    <label for="">1</label>
+
+                    <input type="radio" name="q10" value="2">
+                    <label for="">2</label>
+
+                    <input type="radio" name="q10" value="3" checked>
+                    <label for="">3</label>
+
+                    <input type="radio" name="q10" value="4">
+                    <label for="">4</label>
+
+                    <input type="radio" name="q10" value="5">
+                    <label for="">5</label>
+
+                    <div class="scale">Strongly Agree</div>
+                </div>
+            </div>
+
             <div>
                 <input type="text" id="user-name" placeholder="Your Name">
             </div>
-            <div id="q1" class="question">
-                <input type="radio" class="1" name="q1" value="1">
-                <label for="q1-1">1</label>
-
-                <input type="radio" class="2" name="q1" value="2">
-                <label for="q1-2">2</label>
-
-                <input type="radio" class="3" name="q1" value="3" checked>
-                <label for="q1-3">3</label>
-                
-                <input type="radio" class="4" name="q1" value="4">
-                <label for="q1-4">4</label>
-                
-                <input type="radio" class="5" name="q1" value="5">
-                <label for="q1-5">5</label>
-            </div>
-            <div id="q2" class="question">
-                <input type="radio" name="q2" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q2" value="2">
-                <label for="">2</label>
-
-                <input type="radio" name="q2" value="3" checked>
-                <label for="">3</label>
-
-                <input type="radio" name="q2" value="4">
-                <label for="">4</label>
-
-                <input type="radio" name="q2" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q3" class="question">
-                <input type="radio" name="q3" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q3" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q3" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q3" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q3" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q4" class="question">
-                <input type="radio" name="q4" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q4" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q4" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q4" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q4" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q5" class="question">
-                <input type="radio" name="q5" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q5" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q5" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q5" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q5" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q6" class="question">
-                <input type="radio" name="q6" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q6" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q6" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q6" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q6" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q7" class="question">
-                <input type="radio" name="q7" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q7" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q7" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q7" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q7" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q8" class="question">
-                <input type="radio" name="q8" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q8" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q8" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q8" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q8" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q9" class="question">
-                <input type="radio" name="q9" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q9" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q9" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q9" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q9" value="5">
-                <label for="">5</label>
-            </div>
-            <div id="q10" class="question ">
-                <input type="radio" name="q10" value="1">
-                <label for="">1</label>
-            
-                <input type="radio" name="q10" value="2">
-                <label for="">2</label>
-            
-                <input type="radio" name="q10" value="3" checked>
-                <label for="">3</label>
-            
-                <input type="radio" name="q10" value="4">
-                <label for="">4</label>
-            
-                <input type="radio" name="q10" value="5">
-                <label for="">5</label>
+            <div>
+                <input type="text" id="user-image" placeholder="Link to your photo">
             </div>
 
-            <button id="submit">Submit</button>
+
         </form>
+        <div class="button-cont" id="submit-cont">
+            <a class="button-pill" id="submit">Submit</a>
+        </div>
+
     </main>
+
+    <div class="modal" id="modal">
+        <h2 class="modal-title">
+            Friend Match
+        </h2>
+
+        <div class="modal-content">
+            <h3 class="friend-name" id="friend-name"></h3>
+            <div class="image-cont">
+                <img id="friend-image" src=''>
+            </div>
+
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-        $("#submit").on("click", function (e) {
-                e.preventDefault();
 
-                var scores = [];
-                $questions = $(".question");
-                $questions.each(function () {
-                    var answer = $(this).find("input:checked"),
-                        key = answer.attr("name"),
-                        val = answer.attr("value");
-                    scores.push(parseInt(val));
-                });
-                console.log( scores )
+        $("#submit").on("click", function (e) {
+            e.preventDefault();
+            let scores = [];
+            $questions = $(".question");
+            $questions.each(function () {
+                const answer = $(this).find("input:checked");
+                const val = answer.attr("value");
+                scores.push(parseInt(val));
             });
+
+            const name = $('#user-name').val().trim();
+            const image = $('#user-image').val().trim();
+            console.log(scores, name, image)
+
+            $.post('/api/friends', {
+                'name': name,
+                'photo': image,
+                'scores': scores
+            }, (data, status) => {
+                console.log(data)
+                updateModal(data.likelyFriend);
+                showModal();
+            })
+        });
+        const updateModal = (friend) => {
+            $('#friend-name').text(friend.name)
+            $('#friend-image').attr('src', friend.photo)
+        }
+        const showModal = () => {
+            $('#modal').addClass('isOpen');
+            $('#match-form').hide();
+            $('#submit-cont').hide();
+        }
+        $(document).click(function (event) {
+            $target = $(event.target);
+            if (!$target.closest('#modal').length &&
+                $('#modal').hasClass("isOpen")) {
+                $('#modal').removeClass("isOpen");
+                $('#match-form').show();
+                $('#submit-cont').show();
+            }
+        });
     </script>
 </body>
 
